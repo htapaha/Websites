@@ -18,6 +18,7 @@
     z-index: 999;
 }
 
+/* for the shannon 4 school board banner */
 .navbar__container {
     display: flex;
     justify-content: space-between;
