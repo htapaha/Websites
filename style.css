@@ -58,8 +58,8 @@
 }
 
 .navbar__item {
-    height: 40px;
-    width: 120px;
+    height: 80px;
+    /* width: 120px; */
 }
 
 .navbar__links {
@@ -70,6 +70,39 @@
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #ff0000;
+    color: #fff;
+}
+
+.button:hover {
+    background: #ff0000;
+    transition: all 0.3s ease;    
+}
+
+.navbar__links:hover {
+    color:#ff0000;
+    transition: all 0.3s ease;
 }
 
 /* need to add button hover here */
@@ -91,7 +124,7 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        top:-1000px;
+        top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
         height: 50vh;
@@ -143,9 +176,9 @@
         padding-bottom: 2rem;
     }
 
-    .navbar__btn {
+    /* .navbar__btn {
         padding-bottom: 2rem;
-    }
+    } */
 
     .button {
         display: flex;
@@ -171,4 +204,34 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
+}
+
+/*Hero Section*/
+.main {
+    background-image: url("/images/39925381_335521570362630_483763555485614080_n.jpg");
+    opacity: 0.25;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; */
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+}
+
+.main__content h1 {
+    font-size: 4rem;
+    background-color: #131313;
+    background-image: linear-gradient(to bottom, #fff 0%, #ff0000 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: transparent;
+    -moz-background-clip: transparent;
 }
